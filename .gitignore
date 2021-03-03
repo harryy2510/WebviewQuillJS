@@ -1,0 +1,10 @@
+node_modules/**/*
+npm-debug.*
+build/**/*
+dist/**/*
+
+/html/node_modules
+/WebViewQuillJS/node_modules
+/WebViewQuillJS/.jest/
+.idea
+.vscode

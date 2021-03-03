@@ -1,0 +1,50 @@
+{
+    "name": "react-quill-html",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "cleanAssets": "del-cli --force ../WebViewQuillJS/assets/**/*",
+        "copyDist": "npx copyfiles -u 1 ./dist/index.html ../WebViewQuillJS/assets",
+        "dist": "npm run build && gulp build && npm run cleanAssets && npm run copyDist"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+        "classnames": "^2.2.6",
+        "quill-magic-url": "^3.0.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-quill": "^2.0.0-beta.2"
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.2.11",
+        "@types/node": "^14.14.31",
+        "@types/react": "^17.0.2",
+        "@types/react-dom": "^17.0.1",
+        "del-cli": "^3.0.1",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-inline-source": "^4.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-replace": "^1.0.0",
+        "react-scripts": "4.0.3",
+        "typescript": "^4.2.2"
+    }
+}
